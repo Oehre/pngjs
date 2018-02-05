@@ -41,8 +41,8 @@ PNG.prototype.getBitDepth = function(){
 };
 
 PNG.prototype.setBitDepth = function(bitDepth){
-	if ([2, 4, 8, 16].indexOf(bitDepth) === -1){
-		throw new Error("invalid bith depth " + bitDepth);
+	if ([1, 2, 4, 8, 16].indexOf(bitDepth) === -1){
+		throw new Error("invalid bit depth " + bitDepth);
 	}
 	this.bitDepth = bitDepth;
 };
